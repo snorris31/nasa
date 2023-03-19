@@ -3,11 +3,12 @@
 
   import Textfield from "@smui/textfield";
   import Button from "@smui/button";
-  import { queryValue, pageValue } from "../store";
+  import { queryValue, pageValue, initialSearchMade } from "../store";
   import { updateQuery } from "../api/api";
 
   const runQuery = async () => {
     await updateQuery(query, 1);
+    initialSearchMade.set(true);
   };
   let query = "";
 </script>

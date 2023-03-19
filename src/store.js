@@ -10,6 +10,7 @@ export const showDialog = writable(false);
 export const itemToShow = writable();
 export const queryValue = writable("")
 export const pageValue = writable(1)
+export const initialSearchMade = writable(false);
 
 /** Data transformation.
 For our use case, we only care about the drink names, not the other information.
