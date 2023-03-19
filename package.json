@@ -1,0 +1,42 @@
+{
+	"name": "myapp",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepare": "npm run smui-theme-light",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
+		"smui-theme-light": "smui-theme compile build/smui.css -i src/theme",
+		"smui-theme-dark": "smui-theme compile build/smui-dark.css -i src/theme/dark"
+	},
+	"devDependencies": {
+		"@material/typography": "^14.0.0",
+		"@smui/button": "^7.0.0-beta.0",
+		"@smui/card": "^7.0.0-beta.0",
+		"@smui/dialog": "^7.0.0-beta.0",
+		"@smui/icon-button": "^7.0.0-beta.0",
+		"@smui/image-list": "^7.0.0-beta.0",
+		"@smui/layout-grid": "^7.0.0-beta.0",
+		"@smui/textfield": "^7.0.0-beta.0",
+		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/kit": "^1.5.0",
+		"sass": "^1.59.3",
+		"smui-theme": "^7.0.0-beta.0",
+		"svelte": "^3.54.0",
+		"svelte-check": "^3.0.1",
+		"svelte-paginate": "^0.1.0",
+		"typescript": "^4.9.3",
+		"vite": "^4.0.0",
+		"vite-plugin-restart": "^0.3.1"
+	},
+	"type": "module",
+	"dependencies": {
+		"svelte-material-icons": "^3.0.4",
+		"svelte-material-ui": "^7.0.0-beta.0",
+		"@smui/circular-progress": "^7.0.0-beta.0"
+
+	}
+}
