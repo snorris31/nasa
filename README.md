@@ -1,6 +1,6 @@
-# create-svelte
+# NASA Image and Video library search
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This repo provided a search engine for the NASA photo and video library using Svelte Framework. The styling is in the theme folder, the components used on the page are under routes, and any API calls would be found in the api folder.
 
 ## Developing
 
